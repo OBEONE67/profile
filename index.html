@@ -3,19 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Display README</title>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <title>README</title>
 </head>
 <body>
-    <div id="readme"></div>
-
-    <script>
-        async function loadReadme() {
-            const response = await fetch('https://raw.githubusercontent.com/Kasidit1647/6530250328-github.io/main/readme.md');
-            const markdown = await response.text();
-            document.getElementById('readme').innerHTML = marked(markdown);
-        }
-        loadReadme();
-    </script>
+    <iframe 
+    src="https://raw.githubusercontent.com/Kasidit1647/6530250328-github.io/main/readme.md" 
+    width="100%" 
+    height="800" 
+    frameborder="0">
+    </iframe>
 </body>
 </html>
